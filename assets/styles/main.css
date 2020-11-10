@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+body {
+  background: #ffe5f2;
+}
+
+:root {
+  --primary-color: #fed101;
+  --secondary-color: #000000;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.header__top {
+  height: 40px;
+  background: var(--secondary-color);
+}
+
+.header__nav {
+  height: 40px;
+  background: var(--primary-color);
+}
+
+.main {
+  max-width: 1201px;
+  margin: 0 auto;
+}
+
+.main__hero {
+  display: grid;
+  grid-template-areas:
+    'banner banner news'
+    'promote promote promote';
+  grid-gap: 1rem;
+  margin-bottom: 20px;
+}
+.banner {
+  height: 357px;
+  background: tomato;
+  grid-area: banner;
+}
+
+.news {
+  height: 354px;
+  /* background: purple; */
+  grid-area: news;
+}
+
+.news__one {
+  height: 118px;
+  background: brown;
+}
+
+.news__two {
+  height: 110px;
+  background: orange;
+  margin: 10px 0;
+}
+
+.news__three {
+  height: 110px;
+  background: aquamarine;
+}
+
+.promote {
+  height: 75px;
+  background: yellow;
+  grid-area: promote;
+}
+
+.container {
+  height: 343px;
+  background: orchid;
+  margin-bottom: 20px;
+}
+
+footer {
+  height: 231px;
+  background: #fff;
+}
